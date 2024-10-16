@@ -4,7 +4,7 @@ public class App
 {
     public static void main(String[] args) {
         if (args.length == 0) {
-            System.out.println("Podaj typ bryły i jej wymiary.");
+            System.out.println("Bryła i jej wymiary.");
             return;
         }
 
@@ -19,7 +19,7 @@ public class App
                     return;
                 }
                 bok = Double.parseDouble(args[1]);
-                enumy.jedno.Kula.nazwa();  // Poprawne odwołanie do klasy enum jedno
+                enumy.jedno.Kula.nazwa();
                 System.out.println("Pole powierzchni: " + enumy.jedno.Kula.polePowierzchni(bok));
                 System.out.println("Objętość: " + enumy.jedno.Kula.objetosc(bok));
                 break;
@@ -30,7 +30,7 @@ public class App
                     return;
                 }
                 bok = Double.parseDouble(args[1]);
-                enumy.jedno.Szescian.nazwa();  // Poprawne odwołanie do klasy enum jedno
+                enumy.jedno.Szescian.nazwa();  
                 System.out.println("Pole powierzchni: " + enumy.jedno.Szescian.polePowierzchni(bok));
                 System.out.println("Objętość: " + enumy.jedno.Szescian.objetosc(bok));
                 break;
@@ -43,7 +43,7 @@ public class App
                 double bok1 = Double.parseDouble(args[1]);
                 double bok2 = Double.parseDouble(args[2]);
                 double bok3 = Double.parseDouble(args[3]);
-                enumy.dwu.Prostopadloscian.nazwa();  // Poprawne odwołanie do klasy enum dwu
+                enumy.dwu.Prostopadloscian.nazwa();
                 System.out.println("Pole powierzchni: " + enumy.dwu.Prostopadloscian.polePowierzchni(bok1, bok2, bok3));
                 System.out.println("Objętość: " + enumy.dwu.Prostopadloscian.objetosc(bok1, bok2, bok3));
                 break;
